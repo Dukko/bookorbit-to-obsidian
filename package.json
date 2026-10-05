@@ -1,0 +1,31 @@
+{
+  "name": "bookorbit-to-obsidian",
+  "version": "0.1.0",
+  "description": "Pull BookOrbit reading stats into Markdown files your Obsidian vault can parse (Dataview-friendly).",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "sync": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "sample": "tsx src/sample.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node18 --outfile=dist/sync.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "keywords": [
+    "bookorbit",
+    "obsidian",
+    "dataview",
+    "reading-stats",
+    "markdown"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}

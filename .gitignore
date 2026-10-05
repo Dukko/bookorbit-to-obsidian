@@ -1,0 +1,10 @@
+node_modules/
+.env
+out/
+sample-out/
+dist/
+logs/
+.sync.lock
+.sync.lockdir/
+.bookorbit-session.json
+*.log
